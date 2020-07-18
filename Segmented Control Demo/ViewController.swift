@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         
         print ("Programming is so exciting.")
         
-        if SegmentedCTRL.selectedSegmentIndex == 0 {
+        if sender.selectedSegmentIndex == 0 {
             FirstView.backgroundColor = .red
             
             FirstView.isHidden = false
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             FifthView.isHidden = true
         }
         
-        if SegmentedCTRL.selectedSegmentIndex == 1 {
+        if  sender.selectedSegmentIndex == 1 {
             SecondView.backgroundColor = .blue
             
            FirstView.isHidden = true
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
             FifthView.isHidden = true
             }
         
-        if SegmentedCTRL.selectedSegmentIndex == 2 {
+        if sender.selectedSegmentIndex == 2 {
             ThirdView.backgroundColor = .yellow
             
            FirstView.isHidden = true
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
             FifthView.isHidden = true
             }
         
-        if SegmentedCTRL.selectedSegmentIndex == 3 {
+        if  sender.selectedSegmentIndex == 3 {
             FourthView.backgroundColor = .green
             
           FirstView.isHidden = true
@@ -73,7 +73,7 @@ class ViewController: UIViewController {
             FifthView.isHidden = true
             }
         
-        if SegmentedCTRL.selectedSegmentIndex == 4 {
+        if  sender.selectedSegmentIndex == 4 {
             FifthView.backgroundColor = .black
             
            FirstView.isHidden = true
