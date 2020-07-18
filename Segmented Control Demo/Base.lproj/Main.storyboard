@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Segmented_Control_Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ce7-hJ-CgB">
+                                <rect key="frame" x="42.5" y="60" width="329" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                    <segment title="Fourth"/>
+                                    <segment title="Fifth"/>
+                                </segments>
+                                <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="selectedSegmentTintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="SegmentCTRLChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="hu3-PD-y52"/>
+                                </connections>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuC-3j-cek">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <connections>
+                                    <segue destination="t3l-Vk-yrO" kind="embed" id="uCZ-6I-Iy8"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87b-nf-bYp">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <connections>
+                                    <segue destination="eaV-sR-aFz" kind="embed" id="L90-fh-74B"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efO-PS-wfb">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <connections>
+                                    <segue destination="0uM-gE-lRr" kind="embed" id="ir4-bD-mzp"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uq-Oo-vZO">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <connections>
+                                    <segue destination="zE6-Kd-jaN" kind="embed" id="ElX-5O-Jin"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szc-kp-lby">
+                                <rect key="frame" x="0.0" y="107" width="414" height="755"/>
+                                <connections>
+                                    <segue destination="yIr-gL-QYl" kind="embed" id="aAf-Rb-wju"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="87b-nf-bYp" secondAttribute="trailing" id="9Y0-ZY-65w"/>
+                            <constraint firstItem="ce7-hJ-CgB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CWK-tk-CZa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="iuC-3j-cek" secondAttribute="bottom" id="IJz-iy-uqv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4uq-Oo-vZO" secondAttribute="trailing" id="INO-q3-nTK"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="szc-kp-lby" secondAttribute="bottom" id="IOa-9T-rgJ"/>
+                            <constraint firstItem="szc-kp-lby" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KP3-vp-8N7"/>
+                            <constraint firstItem="4uq-Oo-vZO" firstAttribute="top" secondItem="ce7-hJ-CgB" secondAttribute="bottom" constant="16" id="NPk-xF-a3f"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4uq-Oo-vZO" secondAttribute="bottom" id="QAd-Gb-bQL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iuC-3j-cek" secondAttribute="trailing" id="SCQ-pj-iGf"/>
+                            <constraint firstItem="iuC-3j-cek" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WkD-T5-dzb"/>
+                            <constraint firstItem="4uq-Oo-vZO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Zgj-Bs-fV3"/>
+                            <constraint firstItem="efO-PS-wfb" firstAttribute="top" secondItem="ce7-hJ-CgB" secondAttribute="bottom" constant="16" id="aya-n5-2wn"/>
+                            <constraint firstItem="efO-PS-wfb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j5g-7W-kFD"/>
+                            <constraint firstItem="iuC-3j-cek" firstAttribute="top" secondItem="ce7-hJ-CgB" secondAttribute="bottom" constant="16" id="jMH-l8-kVY"/>
+                            <constraint firstItem="87b-nf-bYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ngT-y4-kfc"/>
+                            <constraint firstItem="87b-nf-bYp" firstAttribute="top" secondItem="ce7-hJ-CgB" secondAttribute="bottom" constant="16" id="pIn-KH-PHj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="efO-PS-wfb" secondAttribute="trailing" id="pUC-Tz-Ssd"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="87b-nf-bYp" secondAttribute="bottom" id="qRF-P1-oIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="szc-kp-lby" secondAttribute="trailing" id="roM-KW-VRq"/>
+                            <constraint firstItem="szc-kp-lby" firstAttribute="top" secondItem="ce7-hJ-CgB" secondAttribute="bottom" constant="16" id="xTp-0K-b3F"/>
+                            <constraint firstItem="ce7-hJ-CgB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zUb-vk-ntZ"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="efO-PS-wfb" secondAttribute="bottom" id="zfW-NG-ghK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="FifthView" destination="szc-kp-lby" id="AMy-Le-Cxk"/>
+                        <outlet property="FirstView" destination="iuC-3j-cek" id="Tg2-6W-0Nb"/>
+                        <outlet property="FourthView" destination="4uq-Oo-vZO" id="JGC-xc-mdT"/>
+                        <outlet property="SecondView" destination="87b-nf-bYp" id="tjY-uK-8f1"/>
+                        <outlet property="SegmentedCTRL" destination="ce7-hJ-CgB" id="xBa-No-laO"/>
+                        <outlet property="ThirdView" destination="efO-PS-wfb" id="tdW-wg-SXe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="-154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="YaF-HM-Ptv">
+            <objects>
+                <viewController id="t3l-Vk-yrO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vSe-Lf-OA2">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dyl-55-fWI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="463"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="otG-ec-Sfe">
+            <objects>
+                <viewController id="eaV-sR-aFz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jQA-7x-kSo">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ShD-JM-5y5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g38-Qg-8wA">
+            <objects>
+                <viewController id="0uM-gE-lRr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WCe-tJ-Kzk">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jxj-k3-2Wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-394" y="764"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OmX-fs-rxK">
+            <objects>
+                <viewController id="zE6-Kd-jaN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="phq-4K-yni">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ct-PD-Zsx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="793"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="g9n-FI-he5">
+            <objects>
+                <viewController id="yIr-gL-QYl" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KMa-3G-Miz">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nu4-Oc-3bl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377" y="824"/>
+        </scene>
+    </scenes>
+</document>
